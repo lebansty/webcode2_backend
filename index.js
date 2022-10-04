@@ -46,7 +46,7 @@ app.post("/userpost",async function(req,res){
             from:"valanrains@gmail.com",
             to:`${user.email}`,
             subject:"Activate your account by clicking the link",
-            text:`Click the link to verify your account http://localhost:3001/activation?code=${token}`
+            text:`Click the link to verify your account https://stellar-fox-397d3a.netlify.app/activation?code=${token}`
            }
             sender.sendMail(composeEmail,(err)=>{
                 if(err){
@@ -314,7 +314,7 @@ if(mail){
     from:"valanrains@gmail.com",
     to:`${mail.email}`,
     subject:"Reseting the password",
-    text:`http://localhost:3001/passreset?code=${token}`
+    text:`https://stellar-fox-397d3a.netlify.app/passreset?code=${token}`
    }
     sender.sendMail(composeEmail,(err)=>{
         if(err){
