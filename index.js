@@ -12,7 +12,7 @@ const app =express();
 app.use(express.json());
 
 app.use(cors({
-    origin:"http://localhost:3001"
+    origin:"https://stellar-fox-397d3a.netlify.app"
 }))
 app.post("/userpost",async function(req,res){
     try {
